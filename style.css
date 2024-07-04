@@ -1,0 +1,21 @@
+
+ .container{
+    display: grid;
+    grid-template-columns: ;
+    
+    
+    
+}
+.item1{
+    background-color: hsl(204, 43%, 93%);
+    grid-area: header;
+    
+} 
+.item2{
+    background-color:  hsl(179, 62%, 43%);
+
+}
+.item3{
+    background-color:  hsl(179, 36%, 58%);
+}
+
