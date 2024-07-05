@@ -10,6 +10,7 @@
     background-color: rgb(238, 235, 235);
     padding-top: 20px;
     box-sizing: border-box;
+   
     
 }
 .item1{
@@ -63,4 +64,5 @@ font-weight: bold;
  #item2p{
     color: white;
  }
+ 
 
