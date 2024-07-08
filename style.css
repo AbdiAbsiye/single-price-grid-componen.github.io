@@ -1,13 +1,18 @@
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
  
  .container{
-    display:flex;
-    flex-direction: column;
-    
-    min-height: 90vh;
-     
-    align-items: center;
+    display: grid;
     justify-content: center;
-    background-color: rgb(238, 235, 235);
+    place-items: center;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    background-color: rgb(219, 215, 215);
     padding-top: 20px;
     box-sizing: border-box;
    
@@ -15,26 +20,32 @@
 }
 .item1{
 
-    background-color:white;
-     padding: 10px;
-     max-width: 330px;
-     border-radius: 5px 0 5px 0;
+    background-color:rgb(247, 243, 243);
+    padding: 1rem;
+    max-height: 400px;
+    min-width: 200px;
+    max-width: 257px;
+    border-radius:  5px 5px 0 0;
+   
+     
     
     
      
 } 
 .item2{
     background-color:  hsl(179, 62%, 43%);
-    padding: 62px;
+    padding: 1rem;
     max-width: 330px;
+    max-height: 300px;
     
      
 }
 .item3{
     background-color:  hsl(179, 36%, 58%);
-    padding: 62px;
+    padding: 1rem;
     max-width: 330px;
     border-radius: 0 0 5px 5px;
+    max-height: 300px;
    
 }
 h1{
@@ -49,12 +60,15 @@ h2{
     
 }
 .button{
-background-color: hwb(72 4% 16%);
- color: white;
-text-align: center;
-border-radius: 5px;
-padding: 8px;
-font-weight: bold;
+    background-color: hwb(72 4% 16%);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    max-width: 200px;
+    margin-top: 20px;
+     
 
 }
  ul{
@@ -64,5 +78,50 @@ font-weight: bold;
  #item2p{
     color: white;
  }
- 
 
+ .split {
+    display: flex;
+    flex-direction: column;
+ }
+ @media(min-width:768px){
+    .container{ 
+        display:grid;
+        place-items:center;
+        
+    }
+    
+    .split {
+        flex-direction: row;
+        max-width: 100%;
+         
+       
+    }
+
+    .item1{
+         grid-area: item1;
+        max-width: 100%;
+       
+    }
+    .item2{
+         grid-area: item2;
+        border-radius: 0 0 0 5px;
+        min-width: 50%;
+        
+
+        
+    }
+    .item3{
+        grid-area: item3;
+        min-width: 50%;
+        border-radius: 0 0 5px 0;
+        
+    }
+   
+ }
+ .three-items{
+    max-width: 700px;
+    padding: 50px;
+    height: 400px;
+ }
+  
+ 
